@@ -1,0 +1,35 @@
+
+
+------------------------------- Jenkins Architecture ----------------------------------------------
+
+1.Developers commit changes to the source code, found in the repository.
+
+2.The Jenkins CI server checks the repository at regular intervals and pulls any newly available code.
+
+3.The Build Server builds the code into an executable file. In case the build fails, feedback is sent to the developers.
+
+4.Jenkins deploys the build application to the test server. If the test fails, the developers are alerted.
+
+5.If the code is error-free, the tested application is deployed on the production server.
+
+6.The files can contain different code and be very large, requiring multiple builds. 
+However, a single Jenkins server cannot handle multiple files and builds simultaneously; 
+for that, a distributed Jenkins architecture is necessary
+
+
+------------------------------- Jenkins Master - Slave ------------------------------------
+
+lets you run multiple builds, tests, and product environment across the entire architecture. 
+Jenkins Slaves can be running different build versions of the code for different operating systems
+and the server Master controls how each of the builds operates.
+
+
+The Jenkins master acts to schedule the jobs, assign slaves, 
+and send builds to slaves to execute the jobs
+
+
+Jenkins can handle 100+ machines and distributes the workload to them automatically
+
+
+the Master distributes the workload and allows us to run different builds on different 
+environments each called a Slave.

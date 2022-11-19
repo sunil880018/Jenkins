@@ -1,0 +1,9 @@
+
+6 Steps to Install Jenkins on Windows-----------------------
+
+1. Install Java Development Kit (JDK)
+2. Set the Path for the Environmental Variable for JDK
+3. Download and Install Jenkins
+4. Run Jenkins on Localhost 8080
+5. Jenkins Server Interface
+6. Build and Run a Job on Jenkins

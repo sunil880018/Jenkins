@@ -1,0 +1,47 @@
+CODE_CHANGES = getGitChanges() // check some code has pushed or changes on gitlab
+pipeline{  // "pipeline" must be top level
+    
+    agent any // "agent" is where to execute? It can be linux,window etc
+
+    tools{ // access build tools for your project, can be npm , maven , yarn etc
+       maven 'Maven'
+       gradle
+    }
+
+    environment{
+        NEW_VERSIONV='1.3.2'
+        SERVER_CREDENTIALS = credentials('server-credentials',usernameVariable:USER,passwordVariable:PWD)
+    }
+
+    stages{ // stages - where the work happens
+
+        stage("build"){
+           
+           steps{
+                 echo 'building version.... ${NEW_VERSIONV}' // environment Variable
+                 sh 'npm install'  // shell script
+                 sh 'npm build' 
+           }
+
+        }
+
+        stage("test"){
+           
+           steps{
+                echo 'testing application....'
+           }
+
+        }
+
+        stage("deploy"){
+
+           steps{
+               echo 'deploying application.... ${SERVER_CREDENTIALS}'
+               sh " some script ${USER} ${PWD}" // credentialss
+           }
+
+        }
+
+    }
+
+}

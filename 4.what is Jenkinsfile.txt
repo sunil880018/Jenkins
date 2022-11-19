@@ -1,0 +1,7 @@
+
+------------------------- what is Jenkinsfile -----------------------------------
+-scripted code
+- is created in your repository
+
+
+Go to > Gitlab repository > create Jenkinsfile

@@ -1,0 +1,21 @@
+
+--------------------------- what is Jenkins -------------------------------------
+
+Jenkins is an open source continuous integration/continuous delivery 
+and deployment (CI/CD) automation software DevOps tool written in the Java programming language. 
+It is used to implement CI/CD workflows, called pipelines.
+
+
+----------------------------- Jenkins Application -----------------------------------------
+
+Jenkins helps to automate and accelerate the software development process.
+
+1. Increased Code Coverage
+Code coverage is determined by the number of lines of code a component has and 
+how many of them get executed. Jenkins increases code coverage which ultimately 
+promotes a transparent development process among the team members.
+
+2. No Broken Code
+Jenkins ensures that the code is good and tested well through continuous integration. 
+The final code is merged only when all the tests are successful. This makes sure that no broken 
+code is shipped into production
