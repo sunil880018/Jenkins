@@ -6,4 +6,4 @@ Github > setting > developer setting > generate token
 4. Set generated personal access token on jenkins configuration setting option
 5. Set your github Or bit bucket project url and branch , on jenkins cicd setting
 6. Set build environment, using docker command, of your project (Dockerfile inside your project) and define docker container port also, on jenkins build environment setting option
-6. Click build now button on jenkins. Finally deployed your app. 
+7. Click build now button on jenkins. Finally deployed your app. 
