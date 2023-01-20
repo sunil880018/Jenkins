@@ -1,7 +1,7 @@
 Deployment of project using Jenkins file
 1.Generate personal access token
 Github > setting > developer setting > generate token
-2. Connect jenkins with aws ec2 instance
+2. Connect jenkins with aws ec2 instance and ecs
 3. Open jenkins with login and password
 4. Set generated personal access token on jenkins configuration setting option
 5. Set your github Or bit bucket project url and branch , on jenkins cicd setting
